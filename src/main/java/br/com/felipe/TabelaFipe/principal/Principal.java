@@ -83,7 +83,7 @@ public class Principal {
         for (int i = 0; i < anos.size(); i++) {
             var enderecoAnos = endereco + "/" + anos.get(i).codigo();
             json = consumeAPI.obterDados(enderecoAnos);
-            Veiculo veiculo = conversor.obterDados(json,, Veiculo.class);
+            Veiculo veiculo = conversor.obterDados(json, Veiculo.class);
             veiculos.add(veiculo);
         }
 
